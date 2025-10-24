@@ -1,13 +1,14 @@
-import { Genre } from "@/lib/types/common";
+import { Genre, MediaType } from "@/lib/types/common";
 
 export interface TVShow {
-  id: number
-  name: string
-  overview: string
-  poster_path: string
-  backdrop_path: string
-  vote_average: number
-  first_air_date: string
+  id: number;
+  name: string;
+  overview: string;
+  poster_path: string;
+  backdrop_path: string;
+  vote_average: number;
+  first_air_date: string;
+  media_type?: MediaType;
 }
 
 export interface TVShowDetails extends TVShow {

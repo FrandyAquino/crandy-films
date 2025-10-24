@@ -1,3 +1,8 @@
+export enum MediaType {
+  Movie = 'movie',
+  TV = 'tv',
+  Person = 'person',
+}
 import { Movie } from '../movies'
 import { TVShow } from '../tv'
 
@@ -70,6 +75,7 @@ export interface Person {
   profile_path: string | null
   known_for_department: string
   poster_path?: string | null
+  media_type?: MediaType.Person
 }
 
 export type SearchResult = Movie | TVShow | Person

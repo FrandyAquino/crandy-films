@@ -1,16 +1,17 @@
 
-import { Genre } from "@/lib/types/common";
+import { Genre, MediaType } from "@/lib/types/common";
 
 export interface Movie {
-  id: number
-  title: string
-  overview: string
-  poster_path: string
-  backdrop_path: string
-  vote_average: number
-  release_date: string
-  genre_ids: number[]
-  certification?: string
+  id: number;
+  title: string;
+  overview: string;
+  poster_path: string;
+  backdrop_path: string;
+  vote_average: number;
+  release_date: string;
+  genre_ids: number[];
+  certification?: string;
+  media_type?: MediaType;
 }
 
 export interface MovieDetails extends Movie {
